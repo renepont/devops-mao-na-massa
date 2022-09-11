@@ -1,0 +1,6 @@
+#/bin/sh
+echo "Initializing provisioning file for db01"
+cat <<EOT >> /home/vagrant/.ssh/authorized_keys
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC9mhUhaGdWTpLoJ3N4uLkfJ3i0cu2etoKOSfReuRiybTd9eI0vPFUeMqjW+UhzGxXJIf9DblG9YSUEGTFl7x3wGVrxtlNkLIAS2C2RZmLMJb9Ju4BPgykQ1b6WAFjDBunIU25aci5yYRz1pR50UWWbstRT3vemXoE1Ch/pMWbYpvqFcTjQWv+W3vfRrNZfWB1xXM3rpNfLD73BnV9RVmXuqaC19Fex2+40NXVlgypuS6VfY3C8X/bodnMWMY40JRa9e/kYgMdvjTkKeDJY0w8m+SXEfxpfkJnjU92tZWzUVYslgARgjNH1TLecsDNO+0xoIUw7snv5y7wBCK7snXxp vagrant@control-node
+
+EOT

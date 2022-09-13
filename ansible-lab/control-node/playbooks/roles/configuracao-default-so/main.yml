@@ -1,0 +1,17 @@
+- name: Upgrade de todos os pacote do S.O
+  yum:
+    name: '*'
+    state: latest
+- name: Instalação do git client
+  yum:
+    name: git
+    state: lates
+- name: Configurar host do lab ansible
+      lineinfile: 
+        dest: /etc/hosts
+        state: present
+        line: line "{{item}}"
+      with_items:
+        - 192.168.33.10 control-node
+        - 192.168.33.11 app01
+        - 192.168.33.12 db01
